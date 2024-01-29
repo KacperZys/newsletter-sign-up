@@ -221,10 +221,8 @@ body {
     .main_article__image {
         content: url('assets/images/illustration-sign-up-mobile.svg');
     }
-}
 
-/* @media (max-width: 960px) {
-    .main_article__image {
-        content: url('assets/images/illustration-sign-up-mobile.svg');
+    .list {
+        padding-left: 2em;
     }
-} */
+}
