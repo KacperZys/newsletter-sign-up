@@ -9,13 +9,12 @@
     font-family: 'Roboto', sans-serif;
 }
 
-.wrapper {
+body {
     background-color: hsl(234, 29%, 20%);
 }
 
 .main_article {
     width: min(90%, 1000px);
-    height: min(700px, 1100px);
     background-color: #fff;
     position: absolute;
     top: 50%;
@@ -29,7 +28,6 @@
 
 .main_article__div {
     width: 50%;
-    height: 100%;
 }
 
 .main_article__div--left {
@@ -46,13 +44,12 @@
 }
 
 .main_article__image {
-    height: 100%;
     width: min(90%, 460px);
 }
 
 .main_article__h1 {
     color: hsl(234, 29%, 20%);
-    font-size: 7rem;
+    font-size: 6rem;
     margin: 2rem 0;
 }
 
@@ -85,7 +82,7 @@
 }
 
 .form__input {
-    width: 43rem;
+    width: 100%;
     height: 6vh;
     border: 2px solid gray;
     padding: 0 1vw;
@@ -95,7 +92,7 @@
 }
 
 .form__button {
-    width: 43rem;
+    width: 100%;
     height: 6vh;
     border: 2px solid gray;
     background-color: hsl(235, 18%, 26%);
@@ -136,7 +133,7 @@
 }
 
 .success__image {
-    width: 60px;
+    width: 13%;
 }
 
 .success__h1 {
@@ -158,33 +155,76 @@
     border-radius: 10px;
 }
 
-@media (max-width: 960px) {
+@media (max-width: 768px) {
+    :root {
+        font-size: 55%;
+    }
+
     .main_article {
-        height: 100vh;
-        display: flex;
         flex-direction: column;
         align-items: center;
     }
 
+    .main_article__div {
+        display: flex;
+        align-items: baseline;
+        justify-content: center;
+    }
+
+    .main_article__div--left {
+        width: 90%;
+    }
+
     .main_article__div--right {
         order: -1;
+        width: 60%;
     }
 
     .main_article__h1 {
-        font-size: 4rem;
+        align-self: center;
     }
-
-    .main_article__text {
-        font-size: 2rem;
-    }
-
-    .list {
-        font-size: 1.5rem;
-    }
-
-
 
     .main_article__image {
         content: url('assets/images/illustration-sign-up-mobile.svg');
     }
 }
+
+@media (max-width: 480px) {
+    :root {
+        font-size: 40%;
+    }
+
+    .main_article {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main_article__div {
+        display: flex;
+        align-items: baseline;
+        justify-content: center;
+    }
+
+    .main_article__div--left {
+        width: 90%;
+    }
+
+    .main_article__div--right {
+        order: -1;
+        width: 60%;
+    }
+
+    .main_article__h1 {
+        align-self: center;
+    }
+
+    .main_article__image {
+        content: url('assets/images/illustration-sign-up-mobile.svg');
+    }
+}
+
+/* @media (max-width: 960px) {
+    .main_article__image {
+        content: url('assets/images/illustration-sign-up-mobile.svg');
+    }
+} */
