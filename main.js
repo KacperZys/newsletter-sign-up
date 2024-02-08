@@ -3,7 +3,7 @@ const input = document.querySelector('.form__input');
 const form = document.querySelector('.form');
 const success = document.querySelector('.success');
 const main_article = document.querySelector('.main_article');
-const validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+const validRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 
 button.addEventListener('click', e => {
     let confirm = false;
